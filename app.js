@@ -107,7 +107,7 @@ form_data.onsubmit=(e)=>{
 
      msg.innerHTML=setAlert('Data Stable','success')
        e.target.reset()
-       
+       getlldata()
        
 
 
