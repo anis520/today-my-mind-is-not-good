@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">        
+
+</head>
+<body>
+    
+     
+    
+      <div class="container my-5">
+
+                <div class="row  justify-content-center">
+                   
+                         <div class="col-md-8">
+                             <a href="#model" data-bs-toggle="modal" class="btn btn-primary my-4">Add products</a>
+                                <div class="card shadow">
+                                         <div class="card-body">
+
+                                                <h2>Add Product</h2>
+                                                <hr>
+                                                <table class="table fon table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>#</td>
+                                                            <td>Product Photo</td>
+                                                            <td>Product Name</td>
+                                                            <td>Price</td>
+                                                            <td>Quantity</td>
+                                                            <td class="text-end">Total</td>
+                                                            <td class="text-center">Action</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="product_list">
+
+                                                    </tbody>
+                                                </table>
+
+
+                                         </div>
+                                </div>
+
+                         </div>
+
+                </div>
+
+      </div>
+
+           
+
+
+<!-- make a  modal for data  -->
+
+
+      <div class="modal fade" id="model">
+
+           <div class="modal-dialog modal-dialog-centered">
+
+                  <div class="modal-content">
+
+                          <div class="modal-header">
+                              <h3>Add some product</h3>
+                              <button class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="msg"></div>
+                            <form id="form_data">
+                                      <div class="my-2">
+                                        <label >Name</label>
+                                        <input type="text" name="name" class="form-control">
+                                      </div>
+                                      <div class="my-2">
+                                        <label >Price</label>
+                                        <input type="text" name="price" class="form-control">
+                                      </div>
+                                      <div class="my-2">
+                                        <label >Quantity</label>
+                                        <input type="text" name="quantity" class="form-control">
+                                      </div>
+                                      <div class="my-2">
+                                        <label >Photo</label>
+                                        <input type="text" name="photo" class="form-control">
+                                      </div>
+                                      <div class="my-2">
+                                        <label for="">Type of Item</label>
+                                        <br>
+                                        <!-- <input type="radio" value="KG">
+                                        <label for="KG">KG</label>
+                                        <input type="radio" value="Pis">PIS
+                                        <label for="PIS">PIS</label> -->
+                                        <input type="radio" id="KG" name="typei" value="KG">
+                                        <label for="KG">KG</label><br>
+                                        <input type="radio" id="PIS" name="typei" value="PIS">
+                                        <label for="PIS">PIS</label><br>
+                                      </div>
+                                        
+                                      
+                                      <div class="my2">
+                                        <input type="submit" class=" btn btn-primary form-control" value="Submit Data">
+                                      </div>
+
+                            </form>
+
+
+                          </div>
+                          <div></div>
+
+                  </div>
+
+           </div>
+
+      </div>
+
+
+
+      <!-- veiw products -->
+
+
+
+      <div class="modal modals fade" id="model_veiw">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+               <div class="modal-content">
+
+                      
+                       <div class="modal-body">
+                                                  
+                              <div class="model_veiw_div text-center">
+
+                                       
+                              </div>
+                      
+                       </div>
+                       <div></div>
+
+               </div>
+
+        </div>
+
+   </div>
+
+   
+      <script src="./function.js"></script>
+   <script src="./app.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+
+</body>
+</html>

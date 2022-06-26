@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+
+
+table tr{
+    
+
+ vertical-align: middle;
+
+}
+.model_veiw_div img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border: 10px solid white;
+}
+.fon{
+
+font-family:'Titan One';
+/* font-weight:lighter; */
+
+
+}
+.modals{
+    font-family:'Titan one';
+
+}
